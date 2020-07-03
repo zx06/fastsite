@@ -1,1 +1,17 @@
 site_name: FastSite
+
+theme:
+    name: material
+    palette:
+        primary: teal
+        accent: teal
+    language: zh
+markdown_extensions:
+    - admonition
+    - codehilite
+
+plugins:
+    - search:
+        prebuild_index: python
+    - git-revision-date-localized:
+        type: iso_datetime
